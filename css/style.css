@@ -127,6 +127,23 @@ nav a:focus,
     color: #404bbf;
 }
 
+.menu .current {
+    color: #404bbf;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
 .menu > li:first-child > .link:active {
     text-decoration: underline;
 }
@@ -160,6 +177,11 @@ nav a:focus,
     color: #ffffff;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+        url("../images/people-office%201.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .main-title {
@@ -219,7 +241,7 @@ nav a:focus,
     letter-spacing: 0.02em;
     line-height: 24px;
     color: #434455;
-    /*padding-bottom: 32px;*/
+   
 }
 
 .title {
@@ -252,6 +274,18 @@ nav a:focus,
     align-items: flex-start;
     justify-content: flex-start;
     gap: 24px;
+}
+
+.icons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
 }
 
 .features-menu .item {
@@ -311,6 +345,37 @@ nav a:focus,
     background-color: #f4f4fd;
 }
 
+.item-container .text-description {
+    margin-bottom: 8px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.social-links .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+   
+}
+
+.social-icon {
+    fill: #fff;
+}
+
+.social-link:hover {
+    background-color: #31d0aa;
+}
+
 .project-cards-menu {
     display: flex;
     flex-wrap: wrap;
@@ -319,11 +384,17 @@ nav a:focus,
     column-gap: 24px;
     row-gap: 48px;
 
-    max-width: 100%;
+    /*max-width: 100%;*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .project-cards-menu .item {
     width: calc((100% - 48px) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-cards-menu .item-container {
@@ -343,6 +414,50 @@ nav a:focus,
 .project-cards .item img {
     max-width: 100%;
     display: block;
+}
+
+.box {
+    position: relative;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    padding: 32px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transform: translateY(100%);
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.box:hover .overlay,
+.box:focus-within .overlay {
+    transform: translateY(0%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay p {
+    color: #f4f4fd;
+    padding: 32px;
+    margin: 0;
 }
 
 .footer {
@@ -367,4 +482,13 @@ nav a:focus,
 
 .logo .footer-logo {
     color: #f4f4fd;
+}
+
+.footer-flex {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-flex .text {
+    margin-bottom: 16px;
 }
