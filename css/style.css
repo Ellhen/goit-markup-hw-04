@@ -538,9 +538,9 @@ nav a:focus,
     gap: 16px;
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: #31d0aa;
+.footer .social-link:hover,
+.footer .social-link:focus {
+    background-color: #31d0aa !important;
 }
 
 .footer-flex .social-icon {
