@@ -535,6 +535,11 @@ nav a:focus,
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-social-links {
+    gap: 16px;
+}
+
+
 .social-link:hover,
 .social-link:focus {
     background-color: #31d0aa;
