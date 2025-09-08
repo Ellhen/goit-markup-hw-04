@@ -395,19 +395,19 @@ nav a:focus,
     fill: #f4f4fd;
 }
 
-.social-link:hover {
-    background-color: #31d0aa;
+.social-link:hover,
+.social-link:focus {
+    background-color: #404bbf;
 }
 
 .project-cards-menu {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    /*flex-wrap: wrap;*/
+    align-items: flex-start;
+    justify-content: flex-start;
     column-gap: 24px;
     row-gap: 48px;
-
-    /*max-width: 100%;*/
+    max-width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -458,7 +458,6 @@ nav a:focus,
 .box:hover p {
     transform: translateY(0%);
 }
-
 
 .overlay {
     position: absolute;
@@ -538,7 +537,6 @@ nav a:focus,
 .footer-social-links {
     gap: 16px;
 }
-
 
 .social-link:hover,
 .social-link:focus {
