@@ -402,7 +402,7 @@ nav a:focus,
 
 .project-cards-menu {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
     column-gap: 24px;
