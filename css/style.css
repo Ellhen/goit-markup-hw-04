@@ -193,9 +193,7 @@ nav a:focus,
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
 
-.container.max {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -397,9 +395,9 @@ nav a:focus,
     fill: #f4f4fd;
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: #404bbf;
+.social-links .social-link:hover,
+.social-links .social-link:focus {
+    background-color: #404bbf !important;
 }
 
 .project-cards-menu {
