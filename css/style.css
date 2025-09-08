@@ -189,11 +189,13 @@ nav a:focus,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ),
-        url("../images/people-office%201.jpg");
+        url("../images/people-office.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
 
+.container.max {
     max-width: 1440px;
     margin: 0 auto;
 }
